@@ -3,14 +3,14 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "tuffy-test-s3-terraform-bucket"
+  bucket = "tuffner01-bucket"
   acl = "private"
   versioning {
-    enabled = true
+    enabled = false
   }
 
   tags {
-    Name = "tuffy-test-s3-terraform-bucket"
+    Name = "my-test-s3-terraform-bucket"
   }
 
 }
