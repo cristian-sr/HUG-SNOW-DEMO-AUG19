@@ -102,7 +102,7 @@ resource "azurerm_virtual_machine" "tuffytfvm01" {
     }
 
     os_profile {
-        computer_name = "tuffy03"
+        computer_name = "tuffy04"
         admin_username = "ahead"
         admin_password = "Password1234!"
     }
