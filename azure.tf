@@ -81,7 +81,7 @@ resource "azurerm_storage_container" "tuffystoragecontainer" {
 
 # Create virtual machine in Azure
 resource "azurerm_virtual_machine" "tuffytfvm01" {
-    name = "terraformvm"
+    name = "terraformvm01"
     location = "West US"
     resource_group_name = "${azurerm_resource_group.tuffy01.name}"
     network_interface_ids = ["${azurerm_network_interface.tuffynic.id}"]
